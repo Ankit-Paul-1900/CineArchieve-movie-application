@@ -1,6 +1,6 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import { Film } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 interface LoginPageProps {
   setUser: React.Dispatch<React.SetStateAction<string | null>>;
@@ -254,12 +254,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ setUser , setLogvalue, setUserIma
               <div className="text-center mt-4">
                 <p className="small text-secondary mb-0">
                   Don’t have an account?{" "}
-                  <a
-                    href="/register"
+                  <NavLink
+                    to={"/register"}
                     className="text-warning fw-medium text-decoration-none"
                   >
                     Create one
-                  </a>
+                  </NavLink>
                 </p>
               </div>
             </div>

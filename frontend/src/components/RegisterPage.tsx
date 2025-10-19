@@ -1,6 +1,6 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import { Film, Upload } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const RegisterPage: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -239,9 +239,9 @@ const RegisterPage: React.FC = () => {
               <div className="text-center mt-4">
                 <p className="small text-secondary mb-0">
                   Already have an account?{" "}
-                  <a href="/login" className="text-warning fw-medium text-decoration-none">
+                  <NavLink to={"/login"} className="text-warning fw-medium text-decoration-none">
                     Sign in
-                  </a>
+                  </NavLink>
                 </p>
               </div>
             </div>
