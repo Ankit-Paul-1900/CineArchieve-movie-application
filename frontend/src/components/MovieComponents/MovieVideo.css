@@ -1,0 +1,48 @@
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    display: flex;
+    gap:5px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.media{
+    min-height:250px;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: rgb(24 23 23 / 20%);
+    /* opacity: 0.2; */
+    border: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 25px;
+}
+.media-btn{
+    background: rgba(237, 222, 222, 0.6);
+    cursor: pointer;
+    z-index: 3;
+
+}
+.movieLink{
+
+    z-index: 2;
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+} 
+.Link{
+    position: relative;
+    height:100%;
+    width: 100%;
+
+}

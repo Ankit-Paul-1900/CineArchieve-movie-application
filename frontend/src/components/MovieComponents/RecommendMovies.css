@@ -1,0 +1,81 @@
+.gallery-cont{
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: gray;
+    border-radius: 5px;
+    /* color:#ef1616; */
+
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    transition: transform 0.3s ease-in-out;
+    background:linear-gradient(to bottom, #2c2c2c, #211d1d);
+
+
+}
+.gall-card{
+    /* background: #383737; */
+    background: linear-gradient(to top, #252424, #000000);
+
+            border-radius: 5px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            text-align: justify;
+            position: relative;
+            /* justify-content: center;
+            align-items: center; */
+            display: flex;
+            margin:2px 0;
+            height:100px;
+            width: 100%;
+            box-shadow:1px  0px 8px rgba(218, 215, 215, 0.5);
+
+            
+            /* padding:10px 0; */
+}
+.gall-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+.gall-card img{
+    height: auto;
+    margin:5px 5px;
+    border-radius: 5px;
+
+}
+.Link{
+    color:white;
+    text-decoration: none;
+}
+.gall-card label{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    padding: 5px 0;
+    overflow-wrap: break-word;
+}
+.gall-card label:hover,
+.gall-card .text:hover{
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.gall-card .text{
+   cursor: pointer;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background:transparent;
+}
+@media(max-width:768px){
+    .gallery-cont{
+        width:90%;
+    }
+}

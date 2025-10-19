@@ -1,0 +1,38 @@
+/* --- Login/Profile Section --- */
+.login-btn, .logout-btn {
+  background-color: #f5c518;
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  background-color: #ffdb4d;
+}
+
+.user-avatar {
+  background-color: #f5c518;
+  color: #000;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.user-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #f5c518;
+  object-fit: cover;
+  margin-right: 5px;
+}

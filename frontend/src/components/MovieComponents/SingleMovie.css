@@ -1,0 +1,434 @@
+.maincontainer{
+    padding:0px 0 0 0;
+    color:aliceblue
+}
+
+
+.bodysection {
+  color: #f3f3f3;
+}
+
+/* Make movie info and media visually distinct */
+.movieinfo {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.option-btn {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.option-btn:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .movieinfo,
+  .othermoviesinfo {
+    border-radius: 10px;
+  }
+
+  .media-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .media-options button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .bodysection {
+    padding: 0.5rem;
+  }
+
+  .movieinfo,
+  .othermoviesinfo {
+    padding: 1rem;
+  }
+
+  .option-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* .herocontent{
+    height:600px;
+   
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 50px;
+  z-index: 1;
+  background-position: center;
+}
+.herocontent::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay on the background 
+    z-index: 1;
+  }
+.herocontent img{
+    position: relative;
+    z-index: 2;
+    width: 28%;
+    height: 80%;
+    margin: 10px 50px;
+}
+.herocontent .moviedetails{
+    z-index: 2;
+    height:80%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+}
+.moviedetails .movietitle{
+    font-size: 30px;
+    margin:5px 0;
+}
+.moviedetails .runtime{
+    font-weight: lighter;
+    font-size: 20px;
+    margin:15px 0;
+
+
+}
+.moviedetails .movietitle span{
+    color: #B0B0B0;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.genres{
+    margin:10px 0px;
+    font-size: 20px;
+    /* list-style:disc; 
+    /* text-transform: none; 
+    padding: 0;
+
+}
+
+.tagline{
+    margin:10px 0;
+    color:#8d8c8c;
+    font-size: 20px;
+    text-wrap:inherit;
+    font-style: italic;
+}
+
+.overviewlabel{
+    font-size: 22px;
+    font-weight: bold;
+}
+.overview{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2rem;
+    padding: 5px 50px 0 0;
+    width:70%;
+} */
+.btntrailer{
+    padding:15px  10px;
+    background: transparent;
+    border-radius: 5px;
+    border:1px solid gray;
+    outline:none;
+    margin-left:10px;
+    text-decoration: none;
+    font-size: 16px;
+    color:#fff;
+    cursor: pointer;
+}
+.btntrailer:hover{
+    color:#b3b3b3;
+}
+
+.bodysection{
+    position: relative;
+    display: flex;
+    
+}
+.movieinfo{
+    margin: 20px 20px;
+    padding:0 40px;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+.Cast{
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+    margin:10px 0;
+    color:white;
+}
+.fullcast{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin:20px;
+    color:white;
+
+}
+.fullcast:hover{
+    color:rgb(138, 132, 132);
+
+}
+.moviemedia{
+    margin:20px;
+}
+.option-btn{
+    color:rgb(138, 132, 132);
+    background: transparent;
+    border:none;
+    font-size: 18px;
+    padding:0px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.option-btn:focus,
+.option-btn:hover{
+    color:white;
+}
+
+.media-options{
+    font-size: 16px;
+    color:white;
+    display: flex;
+    gap:10px;
+    padding:10px 0;
+    position: relative;
+}
+.media-options label{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+.othermoviesinfo{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding:20px 0;
+    height: 100%;
+}
+
+.othermoviesinfo label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.othermoviesinfo p{
+    font-size: 16px;
+    color:rgb(138, 132, 132);
+}
+.loading{
+    display: flex;
+    min-height: 100vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+        background: linear-gradient(to bottom, #434343, #000000);
+
+}
+.herocontent {
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    z-index: 1;
+    background-position: center;
+}
+
+.herocontent::before {
+    content: "";
+    position: absolute;
+    top:-0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay on the background */
+    z-index: 1;
+}
+
+.herocontent img {
+    position: relative;
+    z-index: 2;
+    width: 28%; /* Adjusts dynamically */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 20px;
+}
+
+.herocontent .moviedetails {
+    z-index: 2;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+   flex:1 1 auto; /* Full width on smaller screens */
+    /* max-width: 600px; Restrict width on larger screens */
+}
+
+.moviedetails .movietitle {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.moviedetails .runtime {
+    font-weight: lighter;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.moviedetails .movietitle span {
+    color: #B0B0B0;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.genres {
+    margin: 10px 0px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.tagline {
+    margin: 10px 0;
+    color: #8d8c8c;
+    font-size: 18px;
+    text-wrap: inherit;
+    font-style: italic;
+}
+
+.overviewlabel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.overview {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 5px 20px 0 0;
+    position: relative;
+    /* width: 100%; */
+     max-width: 700px;/* Restrict width for readability */
+}
+.gallery-cont{
+    width: 100%;
+}
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .herocontent {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .herocontent img {
+        /* width: 40%; */
+        margin: 10px auto;
+    }
+
+    .herocontent .moviedetails {
+        align-items: center;
+        text-align: center;
+        flex:1 1 0;
+    }
+
+}
+
+/* Mobile Phones */
+@media (max-width: 800px) {
+    .herocontent{
+        flex-direction: row;
+
+    }
+    .herocontent img {
+        width: 40%; /* Smaller image */
+    }
+
+    .moviedetails .movietitle {
+        font-size: 22px;
+    }
+
+    .moviedetails .runtime {
+        font-size: 16px;
+    }
+
+    .genres,
+    .tagline,
+    .overview {
+        font-size: 16px;
+    }
+    .bodysection{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .herocontent{
+        align-items: flex-start;
+        padding:10px 10px;
+    }
+    .herocontent img{
+        margin:10px 10px;
+    }
+    .herocontent .moviedetails{
+        margin: 10px 0;
+    }
+
+    
+    .movieinfo {
+        width: 90%; /* Occupy 70% on wider screens */
+        padding: 0 40px; /* Larger padding for desktops */
+    }
+    .Cast{
+        font-size: 24px;
+    }
+    .fullcast{
+        font-size: 20px;
+    }
+    .option-btn {
+        font-size: 20px; /* Larger font for wider screens */
+    }
+    .media-options lable{
+        font-size: 24px;
+    }
+    .othermoviesinfo {
+        gap: 20px; /* Larger spacing for wider screens */
+        padding:40px;
+        height: 100%;
+    }
+    
+.othermoviesinfo label{
+    font-size: 24px;
+}
+.othermoviesinfo p{
+    font-size: 20px;
+}
+
+}
+
+
+
