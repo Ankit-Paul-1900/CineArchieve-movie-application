@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 const Popular=()=>{
     const imageURL='https://image.tmdb.org/t/p/w500';
     const [currentPage, setCurrentPage] = useState(1);
-    const [totalitems, setTotalitems] = useState(1);
+    // const [totalitems, setTotalitems] = useState(1);
     const [isLoading,setIsLoading]=useState<boolean>(false);
-
+    const [pages,setPages]=useState<number>(0);
     useEffect(()=>{
       setIsLoading(true)
        const options = {
@@ -35,7 +35,9 @@ axios
       setPopularMovies(res.data.data);
       setPages(res.data.totalPages)
      setIsLoading(false)
-     setTotalitems(res.data.totalDocs)
+    //  setTotalitems(res.data.totalDocs)
+    setPages(res.data.totalDocs)
+
     }
 )
     
@@ -47,8 +49,7 @@ axios
     },[currentPage])
 
     const [popularMovies,setPopularMovies]=useState<any>([]);
-    const [pages,setPages]=useState<number>(0);
-    setPages(totalitems)
+    
   const totalItems = Math.ceil(pages/100); // Total number of items
   const itemsPerPage = 21; // Items per page
 
