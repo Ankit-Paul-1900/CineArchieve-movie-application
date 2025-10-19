@@ -43,7 +43,8 @@ axios
 
     const [popularMovies,setPopularMovies]=useState<any>([]);
     const [pages,setPages]=useState<number>(0);
-  const totalItems = Math.ceil(totalitems/10); // Total number of items
+    setPages(totalitems)
+  const totalItems = Math.ceil(pages/10); // Total number of items
   const itemsPerPage = 14; // Items per page
 
   const handlePageChange = (page:any) => {
